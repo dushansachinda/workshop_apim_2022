@@ -38,7 +38,7 @@ In this session, we will explore:
 
 ### Setup
 #### backend
-To build image for OS version
+To build backend docker image run following command navigate to [backends](https://github.com/dushansachinda/workshop_apim_2022/blob/main/backends/Dockerfile)
 ```bash
 docker build -t tomcat .
 ```
@@ -106,7 +106,7 @@ docker build -t mi-4.0.0 .
 docker run -d -p 8253:8253 -p 8290:8290 -p 9201:9201 mi-4.0.0:latest
 ```
 
-Run docker image passing  evniroment variables
+Run docker image passing  ENV variables
 
  ```bash
 docker run -p 8253:8253 -p 8290:8290 -p 9201:9201 [your-docker-username]/[image-name]:[tag] \

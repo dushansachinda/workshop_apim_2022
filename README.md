@@ -106,17 +106,11 @@ docker build -t mi-4.0.0 .
 docker run -d -p 8253:8253 -p 8290:8290 -p 9201:9201 mi-4.0.0:latest
 ```
 
-Run docker image passing  ENV variables
+Run docker image passing  evniroment variables (this may not working for users with Mac M1 chip)
 
  ```bash
-docker run -p 8253:8253 -p 8290:8290 -p 9201:9201 [your-docker-username]/[image-name]:[tag] \
---env CATERING_SERVICE_EP=http://www.urldoesnotexist.com \
---env SMTP_HOST=SMTP_HOST \
---env SMTP_PORT=SMTP_PORT \
---env EMAIL_FROM=[EMAIL_FROM] \
---env EMAIL_TO=[EMAIL_TO] \
---env SMTP_PASSWORD=[SMTP_PASSWORD] 
---env SMTP_USERNAME=[SMTP_USERNAME]
+docker run -e CATERING_SERVICE_EP="http://www.urldoesnotexist.com" -e SMTP_PORT="465" -e SMTP_HOST="smtp.gmail.com" -e EMAIL_FROM="[from_email]" -e EMAIL_TO="to_email" -e SMTP_USERNAME="[username" -e SMTP_PASSWORD="[password]" -p 8253:8253 -p 8290:8290 -p 9201:9201 dushansachinda/mi-4.0.0:demo
+
 ```
 
 ### Scenario Overview

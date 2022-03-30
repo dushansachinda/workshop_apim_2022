@@ -108,6 +108,11 @@ docker run -d -p 8253:8253 -p 8290:8290 -p 9201:9201 mi-4.0.0:latest
 
 Run docker image passing  evniroment variables (this may not working for users with Mac M1 chip)
 
+pre configured MI image
+```
+https://hub.docker.com/layers/200402421/dushansachinda/mi-4.0.0/demo/images/sha256-870472393ad7d95a4cb1527d0fd63b887c7a3cca36810a4fbe31edfc1bce1cee?context=repo
+```
+
  ```bash
 docker run -e CATERING_SERVICE_EP="http://www.urldoesnotexist.com" -e SMTP_PORT="465" -e SMTP_HOST="smtp.gmail.com" -e EMAIL_FROM="[from_email]" -e EMAIL_TO="to_email" -e SMTP_USERNAME="[username" -e SMTP_PASSWORD="[password]" -p 8253:8253 -p 8290:8290 -p 9201:9201 dushansachinda/mi-4.0.0:demo
 

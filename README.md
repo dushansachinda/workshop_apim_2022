@@ -110,7 +110,7 @@ Run docker image passing  evniroment variables (this may not working for users w
 
 pre configured MI image
 ```
-https://hub.docker.com/layers/200402421/dushansachinda/mi-4.0.0/demo/images/sha256-870472393ad7d95a4cb1527d0fd63b887c7a3cca36810a4fbe31edfc1bce1cee?context=repo
+https://hub.docker.com/layers/200402421/dushansachinda/mi-4.0.0/demo/images/sha256-c23a8adcdf916387dc404d543d1a8cc978be659773e39b81c8d465ae12399a39?context=repo
 ```
 
  ```bash

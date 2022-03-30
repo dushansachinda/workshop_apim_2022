@@ -114,7 +114,7 @@ https://hub.docker.com/layers/200402421/dushansachinda/mi-4.0.0/demo/images/sha2
 ```
 
  ```bash
-docker run -e CATERING_SERVICE_EP="http://www.urldoesnotexist.com" -e SMTP_PORT="465" -e SMTP_HOST="smtp.gmail.com" -e EMAIL_FROM="[from_email]" -e EMAIL_TO="to_email" -e SMTP_USERNAME="[username" -e SMTP_PASSWORD="[password]" -p 8253:8253 -p 8290:8290 -p 9201:9201 dushansachinda/mi-4.0.0:demo
+docker run -e CATERING_SERVICE_EP="http://www.urldoesnotexist.com" -e SMTP_PORT="465" -e SMTP_HOST="smtp.gmail.com" -e EMAIL_FROM="[EMAIL_FROM]" -e EMAIL_TO="[EMAIL_TO]" -e SMTP_USERNAME="[SMTP_USERNAME]" -e SMTP_PASSWORD="[SMTP_PASSWORD]" -p 8253:8253 -p 8290:8290 -p 9201:9201 -v "[source]:/home/wso2carbon/file" dushansachinda/mi-4.0.0:demo 
 
 ```
 

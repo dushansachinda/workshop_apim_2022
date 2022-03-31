@@ -61,6 +61,7 @@ For Mac M1 chp users may use following command to download pre-build image
    docker run -d -p 8083:3306 dushansachinda/mysql-8:latest
    docker exec -it [containerid] mysql -uroot -p
  ```
+ password: pwd
 
  #### WSO2 APIM 4.0.0 pre-loaded with tenents
 You may also can start vanila API Manager 4.0 container following the command given below;

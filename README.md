@@ -103,7 +103,7 @@ https://localhost:9443/publisher?tenant=railco.com
  ```bash
 docker build -t mi-4.0.0 .
 
-docker run -d -p 8253:8253 -p 8290:8290 -p 9201:9201 mi-4.0.0:latest
+docker run -e CATERING_SERVICE_EP="http://www.urldoesnotexist.com" -e SMTP_PORT="465" -e SMTP_HOST="smtp.gmail.com" -e EMAIL_FROM="[EMAIL_FROM]" -e EMAIL_TO="[EMAIL_TO]" -e SMTP_USERNAME="[SMTP_USERNAME]" -e SMTP_PASSWORD="[SMTP_PASSWORD]" -p 8253:8253 -p 8290:8290 -p 9201:9201 -v "[source]:/home/wso2carbon/file" dushansachinda/mi-4.0.0:demo mi-4.0.0:latest
 ```
 
 Run docker image passing  evniroment variables (this may not working for users with Mac M1 chip)

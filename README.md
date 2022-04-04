@@ -65,7 +65,7 @@ For Mac M1 chp users may use following command to download pre-build image
 
  #### WSO2 APIM 4.0.0 pre-loaded with tenents
 You may also can start vanila API Manager 4.0 container following the command given below;
-Pleae note that, if you start vanila node, then you need to run [Setup](https://github.com/dushansachinda/Accelerate_Digital-Adoption_Through-API-led-Integration_workshop/blob/main/scripts/setup.sh) scripts that will generate the tenants users required for scenarios
+Pleae note that, if you start vanila node, then you need to run [Setup](https://github.com/dushansachinda/workshop_apim_2022/blob/main/scripts/setup.sh) scripts that will generate the tenants users required for scenarios
 
 p.s pleaseu use following command to setup ENV properties prior to run setup.sh
  ```bash
